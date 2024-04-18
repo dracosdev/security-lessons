@@ -49,4 +49,7 @@ function resetarTexto() {
     Array.from(paragrafos).forEach(function(p, index) {
         p.innerText = textoOriginal[index];
     });
+    // Limpar os inputs
+    document.getElementById('inputLetras').value = '';
+    document.getElementById('inputDescriptografia').value = '';
 }
