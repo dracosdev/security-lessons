@@ -7,25 +7,27 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Seção para o input e botão de confirmação de criptografia -->
-    <div id="inputSection">
-        <input type="text" id="inputLetras" placeholder="Informe a chave de 5 caracteres" maxlength="5">
-        <button onclick="substituirLetras()">Criptografar</button>
-    </div>
+    <div class="flex-container">
+        <!-- Seção para o input e botão de confirmação de criptografia -->
+        <div id="inputSection" class="section">
+            <input type="text" id="inputLetras" placeholder="Informe a chave de 5 caracteres" maxlength="5">
+            <button onclick="substituirLetras()">Criptografar</button>
+        </div>
 
-    <!-- Seção para o botão de reset -->
-    <div id="resetSection">
-        <button onclick="resetarTexto()">Resetar</button>
-    </div>
+        <!-- Seção para o botão de reset -->
+        <div id="resetSection" class="section">
+            <button onclick="resetarTexto()">Resetar</button>
+        </div>
 
-    <!-- Seção para descriptografia -->
-    <div id="decryptionSection">
-        <input type="text" id="inputDescriptografia" placeholder="Informe a chave de 5 caracteres" maxlength="5">
-        <button onclick="descriptografarTexto()">Descriptografar</button>
+        <!-- Seção para descriptografia -->
+        <div id="decryptionSection" class="section">
+            <input type="text" id="inputDescriptografia" placeholder="Informe a chave de 5 caracteres" maxlength="5">
+            <button onclick="descriptografarTexto()">Descriptografar</button>
+        </div>
     </div>
 
     <!-- Caixa de texto onde o texto será exibido -->
-    <div id="caixaTexto">
+    <div id="caixaTexto" class="section">
         <!-- Textos sobre criptografia serão inseridos via JavaScript -->
     </div>
 

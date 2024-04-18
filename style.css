@@ -6,20 +6,22 @@ body {
     color: #333;
 }
 
-div#inputSection, div#resetSection, div#decryptionSection {
-    margin-bottom: 20px;
-    padding: 10px;
+div.section {
     background-color: #fff;
     border: 1px solid #ccc;
     box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+    padding: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center; /* Align items vertically */
 }
 
 input[type="text"] {
     padding: 8px;
-    margin-right: 5px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    width: 300px;
+    flex-grow: 1; /* Input takes up remaining space */
+    margin-right: 10px; /* Space between input and button */
 }
 
 button {
@@ -42,4 +44,32 @@ div#caixaTexto {
     padding: 10px;
     margin-top: 20px;
     min-height: 150px;
+    width: 100%; /* Ensure full width */
+}
+
+/* Responsive layout */
+@media (min-width: 768px) {
+    .flex-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    div.section {
+        flex: 1;
+        margin-right: 20px; /* Spacing between sections */
+    }
+
+    div.section:last-child {
+        margin-right: 0; /* Remove right margin for the last section */
+    }
+}
+
+@media (max-width: 767px) {
+    .flex-container, .section {
+        display: block;
+    }
+
+    input[type="text"] {
+        width: 100%; /* Full width on smaller screens */
+    }
 }
