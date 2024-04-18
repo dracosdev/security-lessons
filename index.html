@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cripto e Descripto de Texto</title>
+</head>
+<body>
+    <!-- Seção para o input e botão de confirmação de criptografia -->
+    <div id="inputSection" style="margin-bottom: 20px;">
+        <input type="text" id="inputLetras" placeholder="Informe a chave de 5 caracteres" maxlength="5">
+        <button onclick="substituirLetras()">Criptografar</button>
+    </div>
+
+    <!-- Seção para o botão de reset -->
+    <div id="resetSection" style="margin-bottom: 20px;">
+        <button onclick="resetarTexto()">Resetar</button>
+    </div>
+
+    <!-- Seção para descriptografia -->
+    <div id="decryptionSection">
+        <input type="text" id="inputDescriptografia" placeholder="Informe a chave de 5 caracteres" maxlength="5">
+        <button onclick="descriptografarTexto()">Descriptografar</button>
+    </div>
+
+    <!-- Caixa de texto onde o texto será exibido -->
+    <div id="caixaTexto" style="margin-top: 20px; border: 1px solid #ccc; padding: 10px;">
+        <!-- Textos sobre criptografia serão inseridos via JavaScript -->
+    </div>
+
+    <!-- Referência ao arquivo JavaScript externo -->
+    <script src="script.js"></script>
+</body>
+</html>
